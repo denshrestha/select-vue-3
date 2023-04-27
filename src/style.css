@@ -1,0 +1,17 @@
+@layer components {
+  .select-wrapper {
+    @apply px-4 py-3 border border-gray-200 rounded flex justify-between items-center relative
+  }
+
+  .select-options-wrapper {
+    @apply absolute top-full left-0 max-h-40 z-20 overflow-x-auto bg-white border min-w-full rounded-b shadow-lg transition-all ease-linear duration-200 opacity-100
+  }
+
+  .select-option {
+    @apply p-2 hover:bg-slate-300/20 transition ease-linear cursor-pointer text-base
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
